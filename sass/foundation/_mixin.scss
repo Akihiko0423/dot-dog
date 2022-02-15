@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+$tab:768px;
+$pc:1080px;
+
+//font-color
+$font-light:#ECEFF4;
+$font-base:#4C566A;
+
+
+//background-color
+$bg-base:#FFFFFF;
+$bg-light:#ECEFF4;
+$bg-dark:#2D3440;
+$bg-button:#4C566A;
+$bg-button-hober:#2E3440;
+$bg-icon:#D8DEE9;
+
+//icon
+$icon:#5E81AC;
+$icon-light:#ECEFF4;
+
+//logo
+$logo:#4C566A;
+
+
+
+@mixin tab {
+    @media (min-width: ($tab)) {     //画面サイズが1024以下の時にタブレット
+        @content;
+    }
+}
+
+@mixin pc {
+    @media (min-width: ($pc)) {    //画面サイズが768以下の時スマフォ
+        @content;
+    }
+}

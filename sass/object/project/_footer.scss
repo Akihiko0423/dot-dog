@@ -1,0 +1,35 @@
+@use "../../foundation/mixin" as v;
+
+footer{
+    text-align: center;
+    color:v.$font-base;
+    opacity: 0.7;
+    .p-contract{
+        @include v.pc{
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+            width:90%;
+            margin:0 auto;
+        }
+        ul{
+            padding:40px 0 24px;
+            @include v.pc{
+                display:flex;
+            }
+            li{
+                padding-bottom:8px;
+                .c-separate{
+                    display:none;
+                    padding:0 8px 0;
+                    @include v.pc{
+                        display:inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .p-copyright{
+        padding-bottom:24px;
+    }
+}

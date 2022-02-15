@@ -1,0 +1,28 @@
+@use "../../foundation/mixin" as v;
+.p-header{
+    background-color: v.$bg-light;
+    &__inner{
+        margin:0 auto;
+        width:90%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height:70px;
+        &__right{
+            height:40px;
+            width:120px;
+            background-color: v.$bg-button;
+            text-align: center;
+            border-radius: 6px;
+            a{
+                line-height: 40px;
+                display:inline-block;
+                width:100%;
+                font-size: 14px;
+            }
+            &:hover{
+                background-color:v.$bg-button-hober;
+            }
+        }
+    }
+}

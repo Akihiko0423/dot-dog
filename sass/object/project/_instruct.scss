@@ -1,0 +1,81 @@
+@use "../../foundation/mixin" as v;
+
+.p-instruct{
+    background-color: v.$bg-light;
+    &__inner{
+        width:90%;
+        margin:0 auto;
+        padding-bottom:24px;
+        @include v.pc{
+            display:flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+        &__illust{
+            padding:40px 0 32px;
+            width:70%;
+            margin:0 auto;
+            @include v.pc{
+                width:50%;
+            }
+            img{
+                width:100%;
+            }
+        }
+        &__text{
+            @include v.pc{
+                padding:142px 0;
+                width:50%;
+            }
+            h2{
+                font-size:30px;
+                color:v.$font-base;
+                padding-bottom:16px;
+                @include v.pc{
+                    font-size:38px;
+                }
+            }
+            ul{
+                padding-bottom:16px;
+                li{
+                    font-size:16px;
+                    color:v.$font-base;
+                    font-weight: bold;
+                    padding-bottom:8px;
+                    @include v.pc{
+                        font-size:18px;
+                    }
+                    .c-check{
+                        padding-right:8px;
+                        font-weight: bold;
+                        color:v.$icon;
+                    }
+                }
+            }
+            .c-button{
+                height:48px;
+                width:180px;
+                background-color: v.$bg-button;
+                text-align: center;
+                border-radius: 6px;
+                a{
+                    line-height: 48px;
+                    display:inline-block;
+                    width:100%;
+                    font-size: 16px;
+                    position:relative;
+                    .c-right-arrow{
+                        position:absolute;
+                        right:8px;
+                        font-weight: bold;
+                    }
+
+                }
+                &:hover{
+                    background-color:v.$bg-button-hober;
+                }
+            }
+        }
+    }
+
+}
